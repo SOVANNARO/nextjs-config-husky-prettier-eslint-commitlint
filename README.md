@@ -43,3 +43,13 @@ module.exports = { extends: ["@commitlint/config-conventional"] };
 npx --no-install commitlint --edit "$1"
 
 ```
+
+### If Push branch to git error with message `fix npm error Missing script: "test"`
+
+```
+{
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  }
+}
+```
