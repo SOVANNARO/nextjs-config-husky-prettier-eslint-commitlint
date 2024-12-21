@@ -130,7 +130,7 @@ const eslintConfig = [
 export default eslintConfig;
 ```
 
-### 🔴 After config file `eslint.config.mjs` have error need two git resolve problem
+### 🔴 After config file `eslint.config.mjs` If have error need two git resolve problem
 
 ### 🟢 Using Git:
 
