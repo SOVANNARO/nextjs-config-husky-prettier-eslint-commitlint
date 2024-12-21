@@ -1,50 +1,50 @@
-## Config Husky Prettier Eslint and Commitlint
+## 👨‍💻 Config Husky Prettier Eslint and Commitlint
 
-### Install Husky
+### 🟢 Install Husky
 
 ```
 pnpm add --save-dev husky
 ```
 
-### Init Husky Folder
+### 🟢 Init Husky Folder
 
 ```
 pnpm exec husky init
 ```
 
-### Create File `pre-commit` With script below
+### 🟢 Create File `pre-commit` With script below
 
 ```
 npm run lint
 
 ```
 
-### Create File `pre-push` With Script below
+### 🟢 Create File `pre-push` With Script below
 
 ```
 npm run test
 ```
 
-### Install Conventional Commits
+### 🟢 Install Conventional Commits
 
 ```
 pnpm install @commitlint/cli @commitlint/config-conventional -- save-dev
 ```
 
-### Create File `commitlint.config.js` with script below
+### 🟢 Create File `commitlint.config.js` with script below
 
 ```
 module.exports = { extends: ["@commitlint/config-conventional"] };
 ```
 
-### Create File `commit-msg` With Script below
+### 🟢 Create File `commit-msg` With Script below
 
 ```
 npx --no-install commitlint --edit "$1"
 
 ```
 
-### If Push branch to git error with message `fix npm error Missing script: "test"`
+### 🔴 If Push branch to git error with message `fix npm error Missing script: "test"`
 
 ```
 {
@@ -54,15 +54,15 @@ npx --no-install commitlint --edit "$1"
 }
 ```
 
-## Config Prettier
+## 🟢 Config Prettier
 
-### Install Prettier:
+### 🟢 Install Prettier:
 
 ```
 npm install --save-dev prettier
 ```
 
-### Create a `.prettierrc` file in the root of your project.
+### 🟢 Create a `.prettierrc` file in the root of your project.
 
 ```
 {
@@ -73,7 +73,7 @@ npm install --save-dev prettier
 }
 ```
 
-### Create a `.prettierignore` File in the root of your project
+### 🟢 Create a `.prettierignore` File in the root of your project
 
 ```
 node_modules
@@ -81,25 +81,25 @@ build
 dist
 ```
 
-### Format Your Code:
+### 🟢 Format Your Code:
 
 ```
 npx prettier --write "src/**/*.{js,jsx,ts,tsx}"
 ```
 
-### Run the script for format
+### 🟢 Run the script for format
 
 ```
 npm run format
 ```
 
-### Integrate Prettier with ESLint (Optional but Recommended):
+### 🟢 Integrate Prettier with ESLint (Optional but Recommended):
 
 ```
 pnpm install --save-dev eslint-config-prettier eslint-plugin-prettier
 ```
 
-### Config file `eslint.config.mjs`
+### 🟢 Config file `eslint.config.mjs`
 
 ```jsx
 import { dirname } from "path";
@@ -128,12 +128,11 @@ const eslintConfig = [
 ];
 
 export default eslintConfig;
-
 ```
 
-### After config file `eslint.config.mjs` have error need two git resolve problem
+### 🔴 After config file `eslint.config.mjs` have error need two git resolve problem
 
-### Using Git:
+### 🟢 Using Git:
 
 You can configure Git to handle line endings automatically:
 
