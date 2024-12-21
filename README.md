@@ -31,17 +31,15 @@ npm run test
 pnpm install @commitlint/cli @commitlint/config-conventional -- save-dev
 ```
 
-### Create File `.commmitlintrc.cjs` with script below
+### Create File `commitlint.config.js` with script below
 
 ```
-module.exports = {
-  extends: ["@commitlint/config-conventional"],
-};
-
+module.exports = { extends: ["@commitlint/config-conventional"] };
 ```
 
 ### Create File `commit-msg` With Script below
 
 ```
-npx --no-install commitlint --edit $1
+npx --no-install commitlint --edit "$1"
+
 ```
